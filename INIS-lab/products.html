@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>INIS LAB1 - Products</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@200;500&family=Open+Sans&display=swap" rel="stylesheet">
+
+  <!-- Your CSS Code -->
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="shortcut icon" href="./site_images/inis.png">
+
+</head>
+<body onload="initProducts()">
+  <!-- Your Code Here -->
+  <div class="container">
+    <header class="header">
+      <div class="header__container">
+        <div class="logo__container">
+          <div class="logo">
+            <img src="./site_images/logo.png" alt="Logo" class="logo__img">
+          </div>
+          <h1 class="name">Инженерная психология (ИНИС)</h1>
+        </div>
+        <nav class="nagigation__header">
+          <ul class="nav__list__header">
+            <li><a class="list__item__header" href="./products.html">T-Shirts</a></li>
+            <li><a class="list__item__header" href="./not_implemented.html">Hoodies</a></li>
+            <li><a class="list__item__header" href="./not_implemented.html">Create Your Own</a></li>
+            <li><a class="list__item__header" href="./not_implemented.html">About Us</a></li>
+            <li><a class="list__item__header" href="./not_implemented.html">Your Account</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="main__products">
+      <div class="main__products__container">
+        <h2 class="products__title">Our T-Shirts</h2>
+        <div class="shirts__container"></div>
+        <div class="quick__view__block">
+          <div class="quick__view__container">
+            <div class="quick__images">
+              <div class="front__quick__view"></div>
+              <div class="back__quick__view"></div>
+            </div>
+            <div class="quick__info">
+              <p class="quick__name"></p>
+            <p class="quick__price"></p>
+            <button class="close__quick">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer__container">
+        <nav class="navigation__footer">
+          <ul class="nav__list_footer">
+            <li><a class="list__item__footer" href="./not_implemented.html">Contact Us</a></li>
+            <li><a class="list__item__footer" href="./not_implemented.html">Site Map</a></li>
+            <li><a class="list__item__footer" href="./not_implemented.html">Privacy Policy</a></li>
+            <li><a class="list__item__footer" href="./not_implemented.html">Careers</a></li>
+            <li><a class="list__item__footer" href="./not_implemented.html">Reviews</a></li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+  </div>
+  <script src="shirts.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>

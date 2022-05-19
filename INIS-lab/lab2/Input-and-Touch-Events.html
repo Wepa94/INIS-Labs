@@ -1,0 +1,130 @@
+ <!DOCTYPE html>
+ <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+ 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input-and-Touch-Events</title>
+    <style>
+      body {
+        width: 100%;
+        height: 120vh;
+        background-color: white;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+      }
+
+      #workarea {
+        width: 100%;
+        height: 280px;
+        background-color: lightgray;
+        position: relative;
+        flex-shrink: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      #target {
+        width: 50%;
+        height: 50%;
+        background-color: lightgreen;
+        border: 2px solid black;
+      }
+     
+      #captureworkarea {
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        background-color: grey;
+        border: 2px solid black;
+        bottom: 0;
+        right: 0;
+        color: white;
+      }
+
+      #capturetarget {
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        background-color: darkgreen;
+        border: 2px solid black;
+        bottom: 25px;
+        right: 25px;
+        color: white;
+      }
+
+      #clearButtonContainer {
+        padding-top: 5px;
+        width: 100%;
+        flex-shrink: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: stretch;
+      }
+
+      #clearButtonContainer button {
+        padding: 2px;
+      }
+
+      #display {
+        flex: 1;
+        display: flex;
+      }
+
+      .half {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .half h4 {
+        width: 100%;
+        text-align: left;
+        padding-left: 5px;
+      }
+
+      .printArea {
+        width: 100%;
+        flex: 1;
+        overflow: auto;
+      }
+
+      .item {
+        margin: 5px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- <h3>Please click or touch the gray area below:</h3> -->
+    <div id="workarea" tabindex="-1">
+      <div id="captureworkarea">
+        Capture click
+        <div id="capturetarget">
+            
+        </div>
+      </div>
+      <div id="target"></div>
+    </div>
+
+    <div id="clearButtonContainer">
+      <button id="clear-button">Clear</button>
+      <button id="mousemove-toggle-button">Hiding mousemove events</button>
+      <button id="touchmove-toggle-button">Hiding touchmove events</button>
+    </div>
+
+    <div id="display">
+      <div class="half">
+        <h4>workarea (gray)</h4>
+        <div class="printArea" id="workarea-events-display"><div class="item">41) 263136 - mouseup</div><div class="item">40) 262951 - mousedown</div><div class="item">36) 258848 - click (1)</div><div class="item">34) 258848 - mouseup</div><div class="item">32) 258693 - mousedown</div><div class="item">29) 257832 - click (1)</div><div class="item">27) 257832 - click CAPTURING (1)</div><div class="item">26) 257832 - mouseup</div><div class="item">25) 257665 - mousedown</div><div class="item">24) 257208 - click (1)</div><div class="item">22) 257208 - click CAPTURING (1)</div><div class="item">21) 257208 - mouseup</div><div class="item">20) 257054 - mousedown</div><div class="item">19) 256504 - click (1)</div><div class="item">17) 256504 - click CAPTURING (1)</div><div class="item">16) 256504 - mouseup</div><div class="item">15) 256388 - mousedown</div><div class="item">14) 255576 - click (1)</div><div class="item">12) 255576 - click CAPTURING (1)</div><div class="item">11) 255576 - mouseup</div><div class="item">10) 255436 - mousedown</div></div>
+      </div>
+      <div class="half">
+        <h4>target (green)</h4>
+        <div class="printArea" id="target-events-display"><div class="item">45) 282416 - mouseout</div><div class="item">44) 282120 - mouseover</div><div class="item">43) 273913 - mouseout</div><div class="item">42) 273041 - mouseover</div><div class="item">39) 262629 - mouseout</div><div class="item">38) 262529 - mouseover</div><div class="item">37) 259346 - mouseout</div><div class="item">35) 258848 - click (1)</div><div class="item">33) 258848 - mouseup</div><div class="item">31) 258693 - mousedown</div><div class="item">30) 258263 - mouseover</div><div class="item">28) 257832 - click (capture rect)</div><div class="item">23) 257208 - click (capture rect)</div><div class="item">18) 256504 - click (capture rect)</div><div class="item">13) 255576 - click (capture rect)</div><div class="item">9) 254363 - mouseout</div><div class="item">8) 252996 - mouseover</div><div class="item">7) 251863 - mouseout</div><div class="item">6) 251213 - mouseover</div><div class="item">5) 250829 - mouseout</div><div class="item">4) 250179 - mouseover</div><div class="item">3) 248629 - mouseout</div><div class="item">2) 248496 - mouseover</div><div class="item">1) 248196 - mouseout</div></div>
+      </div>
+    </div>
+
+    <script src="Input-and-Touch-Events.js"></script>
+   </body></html>

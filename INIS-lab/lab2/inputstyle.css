@@ -1,0 +1,70 @@
+
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{
+	outline: none;
+}
+a:focus,a:active{
+	outline: none;
+}
+nav,footer,header,aside{
+	display: block;
+}
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+
+.target {
+    position: absolute;
+    border: 2px solid #0d6805;
+    background-color: #20d908b9;
+    border-radius: 8px;
+    transition: background-color 0.2s linear, border-color 0.2s linear;
+}
+
+.target__active {
+    background-color: #159204b9;
+    border-color: #084402;
+}
+
+body.lock{
+	position: relative;
+	background-color: rgba(251, 255, 0, 0.742);
+    overflow: hidden;
+}
+
+#workspace {
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+	background-color: rgba(136, 0, 255, 0.29);
+}
+
+.target {
+	position: absolute;
+	border: 2px solid #236805;
+	background-color: #08d939b9;
+	border-radius: 8px;
+	transition: background-color 0.2s linear, border-color 0.2s linear;
+}
+
+.target__active {
+	background-color: #199204b9;
+	border-color: #094402;
+}

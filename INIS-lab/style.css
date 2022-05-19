@@ -1,0 +1,454 @@
+/* Your Code Here */
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+nav,footer,header,aside{display: block;}
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+
+body{
+    font-family: 'Catamaran', sans-serif;
+}
+
+.container{
+    max-width: 1920px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.ni__container{
+    width: 100%;
+    height: 100%;
+    background-image: url(./examples/lab1-not_implemented.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.header{
+    width: 100%;
+    height: 300px;
+    background-color: #0d193f;
+}
+
+.header__container{
+    width: 100%;
+    height: 100%;
+    padding-top: 50px;
+}
+
+.logo__container{
+    width: 100%;
+    height: 150px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    width: 250px;
+    height: 100px;
+    margin-left: 15%;
+    cursor: pointer;
+}
+
+.logo__img{
+    width: 100%;
+    height: 100%;
+}
+
+.name{
+    font-size: 70px;
+    color: #1e3463;
+    margin-left: 5%;
+}
+
+.nagigation__header{
+    width: 100%;
+    height: 100px;
+    background-color: #7490b8;
+    display: flex;
+    align-items: center;
+}
+
+.nav__list__header{
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.list__item__header{
+    color: #151a37;
+    font-size: 30px;
+}
+
+.list__item__header:hover{
+    transition: 0.3s;
+    color: #fff;
+}
+
+.main{
+    width: 100%;
+    height: 900px;
+}
+
+.main__container{
+    width: 100%;
+    height: 100%;
+}
+
+.home{
+    width: 100%;
+    height: 600px;
+}
+
+.home__img{
+    width: 100%;
+    height: 100%;
+}
+
+.cards__container{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards{
+    width: 80%;
+    height: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card{
+    width: 45%;
+    height: 100%;
+    border: 5px solid #0d193f;
+    box-sizing: border-box;
+    border-radius: 20px;
+    padding: 50px 0 0 70px;
+}
+
+.card__title{
+    font-size: 30px;
+    color: #0d193f;
+    margin-bottom: 10px;
+}
+
+.card__text{
+    width: 90%;
+    font-size: 20px;
+    color: rgb(135, 126, 127);
+    line-height: 25px;
+}
+
+.footer{
+    width: 100%;
+    height: 10%;
+    background-color: #0d193f;
+}
+
+.footer__container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navigation__footer{
+    width: 70%;
+    height: 100%;
+}
+
+.nav__list_footer{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.list__item__footer{
+    color: #fff;
+    font-size: 30px;
+}
+
+.list__item__footer:hover{
+    transition: 0.3s;
+    color: #7490b8;
+}
+
+/*                                                             products.html                                                           */
+
+.main__products,
+.main__products__container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.products__title{
+    font-size: 40px;
+    color: #0d193f;
+    margin: 50px 0 0 20%;
+}
+
+.shirts__container{
+    width: 70%;
+    margin: 50px 50%;
+    transform: translate(-50%);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 42px;
+}
+
+.shirt__block{
+    border: 5px solid #0d193f;
+    box-sizing: border-box;
+    border-radius: 20px;
+}
+
+.image__block{
+    width: 406px;
+    height: 473px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 20px;
+}
+
+.shirt__image{
+    border-radius: 20px;
+}
+
+.shirt__title{
+    color: #0d193f;
+    font-size: 30px;
+    margin: 30px 0 0 30px;
+    font-weight: bold;
+}
+
+.shirt__p{
+    color: grey;
+    font-size: 20px;
+    margin: 20px 0 0 30px;
+}
+
+.qv__btn,
+.sp__btn{
+    background-color: #0d193f;
+    font-size: 20px;
+    color: #fff;
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    margin: 30px 0 20px 50px;
+}
+
+.sp__btn{
+    margin-left: 20px;
+}
+
+.qv__btn:hover,
+.sp__btn:hover,
+.close__quick:hover{
+    transition: 0.3s;
+    color: #7490b8;
+}
+
+.quick__view__block{
+    width: 100%;
+    height: 300px;
+    background-color: #7490b8;
+    margin-bottom: 5px;
+    display: none;
+}
+
+.quick__view__container{
+    margin-top: 25px;
+    margin-left: 15%;
+    display: flex;
+}
+
+.quick__images{
+    display: flex;
+}
+
+.front__quick__view,
+.back__quick__view{
+    width: 210px;
+    height: 250px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.quick__info{
+    margin-left: 20px;
+}
+
+.quick__name{
+    font-size: 40px;
+    color: #0d193f;
+}
+
+.quick__price{
+    font-size: 30px;
+    color: #0d193f;
+    margin-top: 10px;
+}
+
+.close__quick{
+    width: 70px;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 20px;
+    color: #fff;
+    background-color: #0d193f;
+    margin-top: 120px;
+}
+
+/*                                                             details.html                                                           */
+.main__details{
+    width: 100%;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main__details__container{
+    width: 60%;
+    height: 80%;
+}
+
+.shirt__title__detail{
+    color: #0d193f;
+    font-size: 40px;
+}
+
+.shirt__container__detail{
+    display: flex;
+    margin-top: 50px;
+}
+
+.detail__image{
+    width: 406px;
+    height: 473px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.shirt__info{
+    margin-left: 50px;
+}
+
+.shirt__price{
+    color: #0d193f;
+    font-size: 50px;
+}
+
+.shirt__description{
+    color: #0d193f;
+    font-size: 20px;
+    line-height: 30px;
+    margin-top: 30px;
+    width: 650px;
+}
+
+.shirt__side{
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.span__side{
+    color: grey;
+    font-size: 20px;
+}
+
+.front__side__btn,
+.back__side__btn{
+    width: 70px;
+    height: 50px;
+    background-color: #0d193f;
+    color: #fff;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+.front__side__btn:hover,
+.back__side__btn:hover{
+    transition: 0.3s;
+    color: #7490b8;
+}
+
+.front__side__btn.active,
+.back__side__btn.active{
+    color: #7490b8;
+    transform: scale(1.1);
+    box-shadow: 8px 8px 10px rgb(49, 49, 49);
+}
+
+.shirt__colors{
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.span__color{
+    color: grey;
+    font-size: 20px;
+}
+
+.color__btn{
+    width: 100px;
+    height: 60px;
+    border: #0d193f 5px solid;
+    border-radius: 10px;
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+.color__btn:hover{
+    transition: 0.3s;
+    transform: scale(1.1);
+}
+
+.color__btn.active{
+    transform: scale(1.1);
+    border-color: #7490b8;
+    box-shadow: 8px 8px 10px rgb(49, 49, 49);
+}
